@@ -1,6 +1,7 @@
 package com.example.dictionary;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -23,6 +24,13 @@ public class LinearActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.d("태그", "값");
                 // Btn2를 눌렀을 때 로그챗에 값을 띄워줌
+            }
+        });
+
+        findViewById(R.id.Btn_3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LinearActivity.this, MainActivity.class));
             }
         });
     }
