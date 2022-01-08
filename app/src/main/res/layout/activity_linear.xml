@@ -25,6 +25,7 @@
     // onClick 버튼이 클릭되는 이벤트 감지
 
     <Button
+        android:id="@+id/btn_2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="2"

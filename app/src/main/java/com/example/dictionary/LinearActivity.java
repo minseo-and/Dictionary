@@ -2,8 +2,10 @@ package com.example.dictionary;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +16,15 @@ public class LinearActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_linear);
+
+        Button Btn2 = findViewById(R.id.btn_2);
+        Btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("태그", "값");
+                // Btn2를 눌렀을 때 로그챗에 값을 띄워줌
+            }
+        });
     }
 
     public void Btn1Click(View v) {
