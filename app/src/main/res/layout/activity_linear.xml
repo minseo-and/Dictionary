@@ -4,27 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".LinearActivity"
-    tools:ignore="ExtraText">
+    tools:ignore="ExtraText"
+    android:layout_weight="10">
     // vertical은 세로로 정렬 horizontal은 가로로 정렬
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Send"
-        android:textAllCaps="false" />
+        android:text="버튼1"
+        android:layout_weight="3"
+        android:textAllCaps="false"
+        android:textSize="10sp"
+        android:onClick="Btn1Click"/>
     // textAllCaps는 대문자를 소문자로 바꿈
     // match_parent는 레이아웃의 끝까지 설정
+    // weight는 적은 숫자/부모의 숫자 만큼의 비율로 설정한다
+    // text 크기는 sp로 해준다(기기별 텍스트 크기가 다르기 때문)
+    // onClick 버튼이 클릭되는 이벤트 감지
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="버튼1" />
+        android:layout_weight="2"
+        android:text="버튼2"
+        android:textSize="10sp"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="버튼2" />
+        android:layout_weight="5"
+        android:text="버튼3"
+        android:textSize="10sp"/>
 
 </LinearLayout>
