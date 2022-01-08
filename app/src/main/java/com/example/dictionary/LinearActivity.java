@@ -30,7 +30,9 @@ public class LinearActivity extends AppCompatActivity {
         findViewById(R.id.Btn_3).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LinearActivity.this, MainActivity.class));
+                Intent intent = new Intent(LinearActivity.this, MainActivity.class);
+                intent.putExtra("키", "위");
+                startActivity(intent);
             }
         });
     }
