@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".LinearActivity"
+    tools:context=".Java.LinearActivity"
     tools:ignore="ExtraText"
     android:layout_weight="10">
     // vertical은 세로로 정렬 horizontal은 가로로 정렬

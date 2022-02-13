@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dictionary">
         <activity
-            android:name=".LinearActivity"
+            android:name=".Kotlin.KotlinActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +19,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Java.LinearActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Java.MainActivity"
             android:exported="true">
 
         </activity>

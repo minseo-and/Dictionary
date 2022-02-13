@@ -1,6 +1,5 @@
-package com.example.dictionary;
+package com.example.dictionary.Java;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,6 +9,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.dictionary.R;
 
 public class LinearActivity extends AppCompatActivity {
 
