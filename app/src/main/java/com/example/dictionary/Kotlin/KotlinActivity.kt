@@ -10,6 +10,11 @@ class KotlinActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kotlin)
 
+        val a = 1
+        var b = 2
+
+        // val은 값이 변하지 못하고 var는 가능하다
+        // 변수형을 생략하여도 된다
         println(sum(1, 2))
     }
 
