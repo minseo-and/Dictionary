@@ -20,8 +20,11 @@ class KotlinActivity : AppCompatActivity() {
         // val은 값이 변하지 못하고 var는 가능하다
         // 변수형을 생략하여도 된다
         println(sum(1, 2))
+        println(maxOf(1, 2))
     }
 
     fun sum(a : Int, b : Int) = a + b
     //간단한 함수 형식!
+
+    fun maxOf(a: Int, b: Int) = if(a>b) a else b
 }
